@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find ros_adas2019)/launch/vehicle.launch"/>
+
+    <node name="adas2019WheelSpeedControllerNode" pkg="ros_adas2019_examples" type="ros_adas2019_examples_wheel_speed_controller_node" ns="adas2019" output="screen"/>
+    <node name="SimpleLineFollower" pkg="ros_adas2019_examples" type="ros_adas2019_examples_simple_line_follower_node" ns="adas2019" output="screen"/>
+    <node name="EmergencyBrake" pkg="ros_adas2019_examples" type="emergency_brake" ns="adas2019" output="screen"/>
+</launch>
